@@ -63,11 +63,11 @@ public class Actor {
         this.birthDate = birthDate;
     }
 
-        public Date getdeadDate() {
+        public Date getDeadDate() {
         return deadDate;
     }
 
-    public void setdeadDate(Date deadDate) {
+    public void setDeadDate(Date deadDate) {
         this.deadDate = deadDate;
     }
 

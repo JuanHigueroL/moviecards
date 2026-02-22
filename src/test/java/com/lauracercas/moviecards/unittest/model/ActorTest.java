@@ -37,10 +37,10 @@ public class ActorTest {
     }
 
     @Test
-    void testSetGetdeadDate() {
+    void testSetGetDeadDate() {
         Date deadDateExample = new Date();
-        actor.setdeadDate(deadDateExample);
-        assertEquals(deadDateExample, actor.getdeadDate());
+        actor.setDeadDate(deadDateExample);
+        assertEquals(deadDateExample, actor.getDeadDate());
     }
 
     @Test
