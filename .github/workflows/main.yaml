@@ -2,13 +2,13 @@ name: CI
 
 on:
   push:
-    branches: 
+    branches:
       - master
       - main
       - añadir-color-fondo
       - añadir-color-titulo
   pull_request:
-    branches: 
+    branches:
       - master
       - main
 
@@ -75,7 +75,7 @@ jobs:
           mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.qualitygate.wait=false -Dsonar.login=admin -Dsonar.password=juan || true
 
   stage:
-    name: Pre-Production
+    name: stage
     needs: qa
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
@@ -103,7 +103,7 @@ jobs:
       contents: read
     # Se ejecuta en main o master aunque falle el QA previo
     if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
-    
+
     steps:
       - name: Aprobación manual
         uses: trstringer/manual-approval@v1
