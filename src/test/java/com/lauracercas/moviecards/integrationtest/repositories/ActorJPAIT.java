@@ -1,4 +1,4 @@
-/*package com.lauracercas.moviecards.integrationtest.repositories;
+package com.lauracercas.moviecards.integrationtest.repositories;
 
 import com.lauracercas.moviecards.model.Actor;
 import com.lauracercas.moviecards.repositories.ActorJPA;
@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Proyecto: TFM Integración Continua con GitHub Actions
  * Fecha: 04/06/2024
  */
-/*@DataJpaTest
+@DataJpaTest
 public class ActorJPAIT {
 
     @Autowired
@@ -54,4 +54,3 @@ public class ActorJPAIT {
         assertEquals(savedActor, foundActor.get());
     }
 }
-*/
