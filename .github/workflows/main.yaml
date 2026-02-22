@@ -91,7 +91,7 @@ jobs:
           app-name: 'moviecards-pre-higuero'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_43FEB5C103C54061AF34990E0EACD16F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DDF98997DC5B482E833A7571EE50CC9C }}
 
   deploy:
     runs-on: ubuntu-latest
