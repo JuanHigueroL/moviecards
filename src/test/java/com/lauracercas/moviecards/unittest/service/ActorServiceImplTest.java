@@ -51,8 +51,7 @@ class ActorServiceImplTest {
         actors[0]=new Actor();
         actors[1]=new Actor();
 
-        when(template.getForObject(anyString(),any())).thenReturn
-        (actors);
+        when(template.getForObject(anyString(),any())).thenReturn(actors);
 
         List<Actor> result = sut.getAllActors();
 
@@ -65,8 +64,7 @@ class ActorServiceImplTest {
         actor.setId(1);
         actor.setName("Sample Actor");
 
-        when(template.getForObject(anyString(),any())).thenReturn
-        (actor);
+        when(template.getForObject(anyString(),any())).thenReturn(actor);
 
         Actor result = sut.getActorById(1);
 

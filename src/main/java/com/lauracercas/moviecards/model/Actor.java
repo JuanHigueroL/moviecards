@@ -63,7 +63,7 @@ public class Actor {
         this.birthDate = birthDate;
     }
 
-        public Date getDeadDate() {
+    public Date getDeadDate() {
         return deadDate;
     }
 
