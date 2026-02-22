@@ -75,8 +75,9 @@ jobs:
           mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.qualitygate.wait=false -Dsonar.login=admin -Dsonar.password=juan || true
 
   stage:
-    runs-on: ubuntu-latest
+    name: Pre-Production
     needs: qa
+    runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
 
     steps:
