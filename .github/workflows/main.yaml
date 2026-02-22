@@ -95,7 +95,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: qa
+    needs: stage
     # PERMISOS CRÍTICOS PARA LA APROBACIÓN MANUAL
     permissions:
       issues: write
