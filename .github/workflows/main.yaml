@@ -90,7 +90,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'moviecards-hilera' # VERIFICA QUE ESTE SEA EL NOMBRE EN AZURE
+          app-name: 'moviecards-higuero'
           slot-name: 'Production'
           package: '*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AD04F98D697743958B5CC12F474FE188 }}
