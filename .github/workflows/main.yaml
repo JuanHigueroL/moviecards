@@ -60,8 +60,9 @@ jobs:
 
       - name: Ejecutar la aplicación y pruebas
         run: |
-          mvn spring-boot:run & sleep 120
-          mvn clean verify
+          mvn spring-boot:run -DskipTests & 
+          sleep 120
+          mvn test
 
   qa:
     needs: test
