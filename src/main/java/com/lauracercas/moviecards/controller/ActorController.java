@@ -21,7 +21,7 @@ import java.util.List;
  */
 @Controller
 public class ActorController {
-    
+
     private static final String ACTOR_ATTRIBUTE = "actor";
     private static final String TITLE_ATTRIBUTE = "title";
     private static final String ACTOR_FORM_VIEW = "actors/form";
