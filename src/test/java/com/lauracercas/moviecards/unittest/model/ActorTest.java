@@ -44,6 +44,13 @@ public class ActorTest {
     }
 
     @Test
+    void testSetGetdeadDate() {
+        Date deadDateExample = new Date();
+        actor.setdeadDate(deadDateExample);
+        assertEquals(deadDateExample, actor.getdeadDate());
+    }
+
+    @Test
     void testSetGetCountry() {
         String countryExample = "Sample country";
         actor.setCountry(countryExample);
