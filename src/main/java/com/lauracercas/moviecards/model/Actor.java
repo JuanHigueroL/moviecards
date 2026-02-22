@@ -23,6 +23,9 @@ public class Actor {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthDate;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date deadDate;
+
     private String country;
 
     @ManyToMany(mappedBy = "actors")
@@ -60,6 +63,14 @@ public class Actor {
         this.birthDate = birthDate;
     }
 
+        public Date getdeadDate() {
+        return deadDate;
+    }
+
+    public void setdeadDate(Date deadDate) {
+        this.deadDate = deadDate;
+    }
+
     public String getCountry() {
         return country;
     }
@@ -86,6 +97,6 @@ public class Actor {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, birthDate, country);
+        return Objects.hash(id, name, birthDate,deadDate, country);
     }
 }
